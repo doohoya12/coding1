@@ -1,23 +1,55 @@
 <!doctype html>
 <html>
 <head>
-	<title>강두호</title>
+	<title>두호의 사이버 창고</title>
 	<meta charset="utf-8">
+	<style>
+		a {
+			color:black; text-decoration: none;
+		}
+		h1 {
+			font-size : 35px;
+			text-align: center;
+			border-bottom:1px solid gray;
+			margin:0;
+			padding:20px;
+		}
+		#grid{
+			display:grid;
+			grid-template-columns: 150px 1fr;
+		}
+/*
+		부모가 grid인 ol태그를 칭하는법*/
+		#grid ol{
+			border-right:1px solid gray;
+			width:100px;
+			margin:0;
+			padding-left:32px;
+			padding-top:20px;
+		}
+		#article{
+			padding-left:10px;		
+		}
+	
+	</style>
 </head>
 <body>
-	<h1><a href="index.html">강두호</a></h1>
-	<ol>
-		<li><u><a href="selfintroduction.html">자기소개</a></u></li>
-		<li><u><a href="hobby.html">취미</a></u></li>
-		<li><u><a href="studying.html">배우고 있는 것</a></u></li>
-		<li><u><a href="wanttostudy.html">배우고 싶은 것</a></u></li>
-	</ol>
-	
+	<h1><a href="index.html">두호의 사이버 차고</a></h1>
+	<div id="grid">
+		<ol>
+			<li><a href="selfintroduction.html">자기소개</a></li>
+			<li><a href="hobby.html" style="color:red; text-decoration:underline;">취미</a></li>
+			<li><a href="studying.html">배우고 있는 것</a></li>
+			<li><a href="wanttostudy.html">배우고 싶은 것</a></li>
+		</ol>
+		
 <!--윗 부분까지 목차 부분 -->
 	
-	
-	<h2>나는야 강두호</h2> 
-	<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-a-element" target="_blank" title="html5 spcification"></a>나의 취미에 대한 이야기
-	<p style="margin-top:40px;"><strong>Hello My name is <u>Kang Doo Ho</u></strong></p>
-	<img src="sushi.jpg" width="300">
+		<div id="article">	
+			<h2>나는야 강두호</h2> 
+			<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-a-element" target="_blank" title="html5 spcification"></a>나의 취미에 대한 이야기
+			<p style="margin-top:40px;"><strong>Hello My name is <u>Kang Doo Ho</u></strong></p>
+			<img src="sushi.jpg" width="300">
+		</div>
+	</div>
 </body>
